@@ -5,6 +5,10 @@ Created on Fri Sep 17 00:41:45 2021
 @author: sande
 """
 
+
+#there are few data structure and algorithm that we need to apply in the code for making it fast and less time consuming and memory.
+# it is only possible by using proper and exact data structure and algorithm for the code or the problem
+
 class Node:
     def __init__(self,value):
         self.value=value

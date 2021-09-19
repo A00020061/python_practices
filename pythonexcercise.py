@@ -78,3 +78,5 @@ msg=[1, 2, 3, 5, 7, 8, 9, 10]
 check=len(list(filter(lambda x: (x%2==0),msg)))
     
 print(check)
+
+print(sum(range(1,15)))

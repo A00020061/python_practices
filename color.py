@@ -13,3 +13,4 @@ whenever i sit to code my next new project or just code something for the fun of
 i learnt about design patterns and they sounded interesting, even though i didn't understand them because the language was to techiinal lol.
 
 this blog post is the first in series of desigh a-patterns adn will be me shareing what i knnw about desing patterns and how they can be used during you softare developeent and maintenance.
+now i am going to change sometiing in this file and want to get pull's conflict. hope so i will get it with this liine.

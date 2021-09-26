@@ -79,6 +79,25 @@ class LinkedList:
         if self.length==0:
             self.tail=None
         return temp.value #if you add value in temp.value will show you return value that pop up
+    
+    def get(self, index):
+        if index< or index>self.length:
+            return None
+        temp=self.head
+        for _ in range(index):
+            temp=temp.next
+        return temp
+    def set(self,index,value):
+        if index< or index>self.length:
+            return None
+        temp=self.head
+        for _in range(index):
+            temp=temp.next
+        if temp:
+            temp.value=Value
+        return temp
+
+
 my_list=LinkedList(5)
 my_list.append(6)
 my_list.append(7)

@@ -160,6 +160,79 @@ print(my.remove(0))
 
 my.print_list()
     
-
+#In this code i will run few commands in which how i can remove node (first, last and in mid of the linkedlist)
+class Node:
+    def __init__(self,value):
+        self.value=value
+        self.next=None
+        
+class Linkedlist:
+    def __init__(self,value):
+        node=Node(value)
+        self.head=node
+        self.tail=node
+        self.length=1
+        
+    def print_list(self):
+        temp=self.head
+        while temp is not None:
+            print(temp.value)
+            temp=temp.next
+            
+            
+    def append(self,value):
+        node=Node(value)
+        if self.length==0:
+            self.head=node
+            self.tail=node
+        else:
+            self.tail.next=node
+            self.tail=node
+        self.length +=1
+        
+    def insert(self,value):
+        node=Node(value)
+        if self.length==0:
+            self.head=node
+            self.tail=node
+        else:
+            node.next=self.head
+            self.head=node
+        self.length +=1
+        
+    def delatenode(self,value):
+        temp=self.head
+        pre=self.head
+        while temp.next:
+            if temp is not None and temp.value==value:
+                self.head=self.head.next
+                temp.next=None
+                self.length-=1
+                return temp.value
+            if temp.value!=value:
+                pre=temp
+                temp=temp.next
+            if temp.next is None and temp.value!=value:
+                print('value doesnot exist')
+            elif temp.next is None and temp.value==value:
+                pre.next=None
+            elif temp.next is not None and temp.value==value:
+                pre.next=temp.next
+                temp.next=None
+                self.length-=1
+                return temp.value
+           
+                
+        
+                
+        
+my=Linkedlist(40)
+my.append(25)
+my.append(64)
+my.insert(23)
+my.insert(29)
+my.delatenode(29)
+my.delatenode(25)
+my.print_list()
 
         
